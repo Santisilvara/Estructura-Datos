@@ -1,0 +1,8 @@
+def producto_multiplicacion(x, y):
+    if y == 1:
+        return x
+    else:
+        return x + producto_multiplicacion(x, y - 1)
+
+resultado_final = producto_multiplicacion(7, 3)
+print ("El resultado de combinar los elementos es:", resultado_final)

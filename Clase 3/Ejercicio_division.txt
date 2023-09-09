@@ -1,0 +1,8 @@
+def division_resta(dividendo, divisor):
+    if dividendo < divisor:
+        return 0
+    else:
+        return 1 + division_resta(dividendo - divisor, divisor)
+
+resultado_division = division_resta(20, 4)
+print("El resultado de la división es:", resultado_division)
